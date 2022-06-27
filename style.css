@@ -1,0 +1,90 @@
+@import url(//db.onlinewebfonts.com/c/1dced00e473a2db7b3d52a4c8392f31e?family=Euclid+Circular+A+Light);
+
+@font-face {font-family: "Euclid Circular A Light"; src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot"); src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff") format("woff"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.svg#Euclid Circular A Light") format("svg"); }
+
+#top, #bottom, #left, #right {
+	background: #ffffff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 35px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 35px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+body {
+  font-family: Euclid Circular A Light;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+  cursor:none;
+  overflow-y: hidden;
+  overflow-x:hidden;
+  background-image: url(background---image-2.jpg);
+  background-size: cover;
+}
+
+/* cursor */ 
+div.cursors div {
+  position:absolute;
+  top:300px;
+  left:600px;
+  width:60px;
+  height:60px;
+  pointer-events:none;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.logo {
+  position: fixed;
+  width:30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 85px;
+  z-index: 12334;
+}
+
+.bottom {
+  height: calc(100vh - 235px);
+}
