@@ -1,8 +1,10 @@
-let images = ["BCover.jpg", "MechGP.jpg", "Mech2.jpg", "Mech3.jpg", "Mech4.jpg", "MCA1.png"];
-const gallery = document.getElementById("ImgGallery");
-let index = 0;
+let  counter = 0;
 
-gallery.addEventListener("click", function() {
-    gallery.src = images[index];
-    index = (index === images.length - 1) ? 0 : index + 1;
-});
+let gallery = ['./background---image-1.jpg', './background---image-2.jpg', './background---image-1.jpg', './background---image-2.jpg'],
+rotateGallery = function () {
+    document.getElementById("image-1").src = gallery[counter];
+    counter ++;
+    if (counter >= gallery.length) {
+        counter = 0;
+    }
+};
