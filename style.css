@@ -1,24 +1,52 @@
 @import url(//db.onlinewebfonts.com/c/1dced00e473a2db7b3d52a4c8392f31e?family=Euclid+Circular+A+Light);
 
-@font-face {font-family: "Euclid Circular A Light"; src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot"); src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff") format("woff"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.svg#Euclid Circular A Light") format("svg"); }
+@font-face {
+  font-family: "Euclid Circular A Light";
+  src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot");
+  src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.svg#Euclid Circular A Light")
+      format("svg");
+}
 
-#top, #bottom, #left, #right {
-	background: #ffffff;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 35px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 35px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+#top,
+#bottom,
+#left,
+#right {
+  background: #ffffff;
+  position: fixed;
+}
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 35px;
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 35px;
+}
+#top {
+  top: 0;
+}
+#bottom {
+  bottom: 0;
+}
 
 body {
   font-family: Euclid Circular A Light;
@@ -28,21 +56,25 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
   letter-spacing: 0.1em;
-  cursor:none;
+  cursor: none;
   overflow-y: hidden;
-  overflow-x:hidden;
+  overflow-x: hidden;
   background-image: url(williams-joinery-13---legacy.jpg);
   background-size: cover;
 }
 
-/* cursor */ 
+/* cursor */
+.cursors {
+  z-index: 123456789123345567892345678912334556789;
+}
+
 div.cursors div {
-  position:absolute;
-  top:300px;
-  left:600px;
-  width:60px;
-  height:60px;
-  pointer-events:none;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
   transform: translate(-50%, -50%);
 }
 
@@ -65,7 +97,7 @@ header .top {
 
 .logo {
   position: fixed;
-  width:30%;
+  width: 30%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -78,7 +110,7 @@ footer {
 }
 
 .bottom {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 85px;
@@ -87,4 +119,100 @@ footer {
 
 .bottom {
   height: calc(100vh - 235px);
+}
+
+/* overlay click button */
+
+span {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ecdbcd;
+  overflow-x: hidden;
+  transition: 0.5s;
+  font-family: Euclid Circular A Light;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  color: black;
+  font-size: 11px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+  margin-bottom: 15px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 75%;
+  text-align: left;
+  margin-top: auto;
+  margin-left: 35px;
+  color: black;
+}
+
+.overlay a {
+  padding: 8px;
+  font-family: Euclid Circular A Light;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  display: block;
+  transition: 0.3s;
+}
+
+.wordmark-logo {
+  margin-top: 75px;
+  margin-bottom: 65px;
+  width: 75%;
+}
+
+.badge-logo {
+  margin-left: 250px;
+  width: 80px;
+  z-index: 2;
+  transform: translateY(-55px);
+}
+
+.social-links {
+  margin-top: 65px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 45px;
+  font-size: 60px;
+  color: black;
+}
+
+.social-icons-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
 }

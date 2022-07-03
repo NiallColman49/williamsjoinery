@@ -1,50 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/x-icon" href="./cursor---wordmark.svg">
-      <link href="//db.onlinewebfonts.com/c/1dced00e473a2db7b3d52a4c8392f31e?family=Euclid+Circular+A+Light" rel="stylesheet" type="text/css"/>
-      <link rel="stylesheet" href="./style.css">
-      <title>Williams Joinery</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./cursor---wordmark.svg" />
+    <link
+      href="//db.onlinewebfonts.com/c/1dced00e473a2db7b3d52a4c8392f31e?family=Euclid+Circular+A+Light"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="info-styles" href="./info-click.js" />
+    <title>Williams Joinery</title>
+  </head>
 
-<body>
-      
-<div id="left"></div>
-<div id="right"></div>
-<div id="top"></div>
-<div id="bottom"></div>
+  <body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
 
-<header>
-  <div class="top";>
-    <a href="mailto:info@williamsjoinery.co.uk"> EMAIL<br> info@williamsjoinery.co.uk </a>
-    <a href="https://www.google.com/maps/place/Williams+Joinery/@53.8499038,-2.1375455,15z/data=!4m2!3m1!1s0x0:0x13db350a72cdf45c?sa=X&ved=2ahUKEwiE_Zijkfr2AhXMOcAKHcTsAtgQ_BJ6BAhDEAU">UNIT 2. LODGE HOLME.<br> SKIPTON RD.TRAWDEN.<br>COLNE. BB8 8RA</a>
-  </div>
-</header>
+    <header>
+      <div class="top" ;>
+        <a href="mailto:info@williamsjoinery.co.uk">
+          EMAIL<br />
+          info@williamsjoinery.co.uk
+        </a>
+        <a
+          href="https://www.google.com/maps/place/Williams+Joinery/@53.8499038,-2.1375455,15z/data=!4m2!3m1!1s0x0:0x13db350a72cdf45c?sa=X&ved=2ahUKEwiE_Zijkfr2AhXMOcAKHcTsAtgQ_BJ6BAhDEAU"
+          >UNIT 2. LODGE HOLME.<br />
+          SKIPTON RD.TRAWDEN.<br />COLNE. BB8 8RA</a
+        >
+      </div>
+    </header>
 
-<div>
-  <div class="logo">
-    <img src="./logo-wordmark.svg">
-  </div>
-</div>
+    <div>
+      <div class="logo">
+        <img src="./logo-wordmark.svg" />
+      </div>
+    </div>
 
-<footer>
-  <div class="bottom";>
-    <a href="tel:07595992925">TEL<br>+44 (0)759 599 2925</a>
-    <a> BESPOKE JOINERY<br> & WOODWORKING</a>
-    <a href="http://www.instagram.com"> INSTAGRAM / FACEBOOK</a>
-  </div>
-</footer>
+    <footer>
+      <div class="bottom">
+        <a href="tel:07595992925">TEL<br />+44 (0)759 599 2925</a>
+        <a
+          >BESPOKE JOINERY<br />
+          & WOODWORKING</a
+        >
+        <span style="cursor: ne-resize" onclick="openNav()">
+          more information</span
+        >
+      </div>
+    </footer>
 
-<div class="cursors">
-  <div>
-    <img src="./cursor---wordmark.svg">
-  </div>
-</div>
+    <div class="cursors">
+      <div>
+        <img src="./cursor---wordmark.svg" />
+      </div>
+    </div>
 
-<script src="./cursors.js"></script>
-<script src="./changeimage.js"></script>
-</body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <img
+          class="wordmark-logo"
+          src="./williams - logo - black.svg"
+          alt="williams-joinery-cl"
+        />
+        <h2 href="#overlay-header">ABOUT US</h2>
+        <p>
+          High-quality, bespoke craftsmanship for the most discerning clients.
+          Every commission is a unique opportunity to create something entirely
+          new, offering a truly bespoke, concept-to-completion service.
+        </p>
+        <p>
+          High-quality, bespoke craftsmanship for the most discerning clients.
+          Every commission is a unique opportunity to create something entirely
+          new.
+        </p>
+        <h2 class="social-links">ADDRESS</h2>
+        <p>UNIT 2. LODGE HOLME. SKIPTON RD.TRAWDEN.COLNE. BB8 8RA</p>
+          <img
+          class="badge-logo"
+          src="./cursor---wordmark--black.svg"
+          alt="williams-joinery-cl"
+        />
+        <!-- <div class="social-icons-group">
+          <a href="www.facebook.com">FACEBOOK</a>
+          <a href="www.instagram.com">INSTAGRAM</a>
+          <a href="www.pinterest.com">PINTEREST</a>
+          <a href="www.dribbble.com">DRIBBLE</a>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+    <script src="./info-slider.js"></script>
+    <script src="./cursors.js"></script>
+    <script src="./changeimage.js"></script>
+    <script src="./info-click.js"></script>
+  </body>
 </html>
